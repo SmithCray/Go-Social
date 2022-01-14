@@ -1,0 +1,25 @@
+{
+  "name": "go-social",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmithCray/Go-Social.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SmithCray/Go-Social/issues"
+  },
+  "homepage": "https://github.com/SmithCray/Go-Social#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6"
+  }
+}

@@ -1,23 +1,20 @@
 const express = require("express");
-const mongodb = require("mongodb").MongoClient;
+const db = require("./config/connection");
+const routes = require("./routes");
 
 const app = express();
 const port = 3001;
 
-const connectionStringURI = `mongodb://localhost:27017`;
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-let db;
+app.use(routes);
 
-mongodb.connect(
-  connectionStringURI,
-  { useNewUrlParser: true, useUnifiedTopology: true },
-  (err, client) => {
-    db = client.db();
-    app.listen(port, () => {
-      console.log(`Example app listening at http://localhost:${port}`);
-    });
-  }
-);
+db.once("open", () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
+});
 
 app.use(express.json());
 
