@@ -1,5 +1,5 @@
 const { Schema, Types } = require("mongoose");
-const formatTime = require("../utils/helpers/formatTime");
+//const formatTime = require("../utils/helpers/formatTime");
 
 const reactionSchema = new Schema(
   {
@@ -19,7 +19,7 @@ const reactionSchema = new Schema(
     createdAt: {
       type: Date,
       default: Date.now,
-      get: (timestamp) => formatTime(timestamp),
+      //get: (timestamp) => formatTime(timestamp),
     },
   },
   {

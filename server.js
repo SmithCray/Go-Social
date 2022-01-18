@@ -3,7 +3,7 @@ const db = require("./config/connection");
 const routes = require("./routes");
 
 const app = express();
-const port = 3001;
+const PORT = 3001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -15,11 +15,3 @@ db.once("open", () => {
     console.log(`API server running on port ${PORT}!`);
   });
 });
-
-app.use(express.json());
-
-app.get("/read", (req, res) => {});
-
-app.post("/create", (req, res) => {});
-
-app.delete("/delete/", (req, res) => {});
