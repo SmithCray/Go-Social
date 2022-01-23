@@ -1,5 +1,4 @@
 # Go-Social
-<<<<<<< HEAD
 
 an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
@@ -44,6 +43,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-=======
-An API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
->>>>>>> 6931c7bbf38172fbd14e120f76a8a2df18863013
