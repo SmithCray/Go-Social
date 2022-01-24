@@ -38,6 +38,16 @@ const thoughtController = {
         res.status(500).json(err);
       });
   },
+  deleteThought(req, res) {
+    User.findOneAndDelete({ _id: req.params.id })
+      .then((dbDeleteThought) => {
+        res.json(dbDeleteThought);
+      })
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
 };
 
 module.exports = thoughtController;
