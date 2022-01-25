@@ -1,10 +1,15 @@
+const res = require("express/lib/response");
 const { Thought } = require("../models");
 
 const thoughtController = {
   getThoughts(req, res) {
-    Thought.find().then((dbThought) => {
-      res.json(dbThought);
-    });
+    Thought.find()
+      .then((dbThought) => {
+        res.json(dbThought);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   },
   getThought(req, res) {
     Thought.findOne({ _id: req.params.id })
@@ -20,9 +25,7 @@ const thoughtController = {
       .then((dbNewThought) => {
         res.json(dbNewThought);
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => res.status(500).json(err));
   },
   updateThought(req, res) {
     Thought.findOneAndUpdate(
@@ -39,7 +42,7 @@ const thoughtController = {
       });
   },
   deleteThought(req, res) {
-    User.findOneAndDelete({ _id: req.params.id })
+    Thought.findOneAndDelete({ _id: req.params.id })
       .then((dbDeleteThought) => {
         res.json(dbDeleteThought);
       })
