@@ -21,7 +21,7 @@ const thoughtController = {
       });
   },
   addThought(req, res) {
-    Thought.create(req.body)
+    Thought.create(req.params.body)
       .then((dbNewThought) => {
         res.json(dbNewThought);
       })

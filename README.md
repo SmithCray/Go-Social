@@ -1,13 +1,25 @@
 # Go-Social
 
-an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
+#
 
-## Author:
+[Go-Social](https://github.com/SmithCray/Go-Social) is an example of a API used for a Social Network web application where users can share their thoughts, react to friends’ thoughts, and create a friend a ist. We will be focusing on the back-end portion using [Insomnia](https://insomnia.rest/) to test our routes and [Mongodb](https://www.mongodb.com/) to build our database.
+
+## Preview
 
 #
 
+Insomnia Preview Snippet:
 <br>
- 
+![Insomnia Preview](assets\HW14PrePNG.PNG)
+
+## [**Checkout Our Video Walkthrough here!**](https://drive.google.com/file/d/1ak7VMcdyEm4lqgPRTFLXR_ovZFWTj2wc/view)
+
+<br>
+
+## Author
+
+#
+
 ### <span style="color:orange">**Cray Smith**</span>
 
 <img src="assets/p2cray.PNG" alt="Cray Smith GitHub" width="150px">
