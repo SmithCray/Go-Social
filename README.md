@@ -1,14 +1,26 @@
 # Go-Social
 
-#
+<br>
 
-[Go-Social](https://github.com/SmithCray/Go-Social) is an example of a API used for a Social Network web application where users can share their thoughts, react to friends’ thoughts, and create a friend a ist. We will be focusing on the back-end portion using [Insomnia](https://insomnia.rest/) to test our routes and [Mongodb](https://www.mongodb.com/) to build our database.
+[Go-Social](https://github.com/SmithCray/Go-Social) is an example of a API used for a Social Network web application where users can share their thoughts, react to friends’ thoughts, and create a friend a ist. We will be focusing on the back-end portion using [Insomnia](https://insomnia.rest/) to test our routes and [Mongodb](https://www.mongodb.com/) to build our database. In addition to those tools we also use [Express.js](https://www.npmjs.com/package/express) to help run the engine behind it all as well as a robust [NoSQL](https://www.mongodb.com/nosql-explained) database to allow for the management of large amounts of unstructured data.
+
+<br>
+
+### <span style="color:green">Technologies:</span>
+
+- [Insomnia](https://insomnia.rest/)
+
+- [Mongodb](https://www.mongodb.com/)
+
+- [Express.js](https://www.npmjs.com/package/express)
+
+<br>
 
 ## Preview
 
 #
 
-Insomnia Preview Snippet:
+<span style="color:yellow">Insomnia Preview Snippet:</span>
 <br>
 ![Insomnia Preview](assets\HW14PrePNG.PNG)
 
